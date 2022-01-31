@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Jwt解密
-build_property.ProjectDir = D:\NetCore_YangZhongke\05_Git_JWT\JWT\Jwt解密\
+build_property.ProjectDir = D:\NetCore_YangZhongke\05_生成JWT\Jwt解密\

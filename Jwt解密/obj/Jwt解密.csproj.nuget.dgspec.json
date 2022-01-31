@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NetCore_YangZhongke\\05_Git_JWT\\JWT\\Jwt解密\\Jwt解密.csproj": {}
+    "D:\\NetCore_YangZhongke\\05_生成JWT\\Jwt解密\\Jwt解密.csproj": {}
   },
   "projects": {
-    "D:\\NetCore_YangZhongke\\05_Git_JWT\\JWT\\Jwt解密\\Jwt解密.csproj": {
+    "D:\\NetCore_YangZhongke\\05_生成JWT\\Jwt解密\\Jwt解密.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetCore_YangZhongke\\05_Git_JWT\\JWT\\Jwt解密\\Jwt解密.csproj",
+        "projectUniqueName": "D:\\NetCore_YangZhongke\\05_生成JWT\\Jwt解密\\Jwt解密.csproj",
         "projectName": "Jwt解密",
-        "projectPath": "D:\\NetCore_YangZhongke\\05_Git_JWT\\JWT\\Jwt解密\\Jwt解密.csproj",
+        "projectPath": "D:\\NetCore_YangZhongke\\05_生成JWT\\Jwt解密\\Jwt解密.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\NetCore_YangZhongke\\05_Git_JWT\\JWT\\Jwt解密\\obj\\",
+        "outputPath": "D:\\NetCore_YangZhongke\\05_生成JWT\\Jwt解密\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\VS 2019\\vsjieya3\\NuGetPackages",

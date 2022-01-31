@@ -18,6 +18,7 @@ JwtSecurityTokenHandler tokenHandler = new();
 TokenValidationParameters valParam = new();
 //对密钥进行转码
 //对密钥进行转码
+//创建分支
 var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secKey));
 valParam.IssuerSigningKey = securityKey;
 valParam.ValidateIssuer = false;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NetCore_YangZhongke\\05_Git_JWT\\JWT\\05_生成JWT\\05_生成JWT.csproj": {}
+    "D:\\NetCore_YangZhongke\\05_生成JWT\\05_生成JWT\\05_生成JWT.csproj": {}
   },
   "projects": {
-    "D:\\NetCore_YangZhongke\\05_Git_JWT\\JWT\\05_生成JWT\\05_生成JWT.csproj": {
+    "D:\\NetCore_YangZhongke\\05_生成JWT\\05_生成JWT\\05_生成JWT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetCore_YangZhongke\\05_Git_JWT\\JWT\\05_生成JWT\\05_生成JWT.csproj",
+        "projectUniqueName": "D:\\NetCore_YangZhongke\\05_生成JWT\\05_生成JWT\\05_生成JWT.csproj",
         "projectName": "05_生成JWT",
-        "projectPath": "D:\\NetCore_YangZhongke\\05_Git_JWT\\JWT\\05_生成JWT\\05_生成JWT.csproj",
+        "projectPath": "D:\\NetCore_YangZhongke\\05_生成JWT\\05_生成JWT\\05_生成JWT.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\NetCore_YangZhongke\\05_Git_JWT\\JWT\\05_生成JWT\\obj\\",
+        "outputPath": "D:\\NetCore_YangZhongke\\05_生成JWT\\05_生成JWT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\VS 2019\\vsjieya3\\NuGetPackages",
