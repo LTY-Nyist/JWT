@@ -16,7 +16,7 @@ string secKey = "fasdfad&9045dafz222#fadpio@0232";
 JwtSecurityTokenHandler tokenHandler = new();
 //包含一组在验证令牌时使用的参数。
 TokenValidationParameters valParam = new();
-
+//对密钥进行转码
 var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secKey));
 valParam.IssuerSigningKey = securityKey;
 valParam.ValidateIssuer = false;
