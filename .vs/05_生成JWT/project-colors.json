@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bb754098-0ed6-4145-a884-551517eb44c2": {
+      "ProjectGuid": "bb754098-0ed6-4145-a884-551517eb44c2",
+      "DisplayName": "05_生成JWT",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "杂项文件",
+      "ColorIndex": -1
+    },
+    "b51656bc-7637-40b5-bc50-d436a8aef754": {
+      "ProjectGuid": "b51656bc-7637-40b5-bc50-d436a8aef754",
+      "DisplayName": "Jwt解密",
+      "ColorIndex": 1
+    },
+    "dead6b60-e159-462f-a10e-6f12c560bfaa": {
+      "ProjectGuid": "dead6b60-e159-462f-a10e-6f12c560bfaa",
+      "DisplayName": "Jwt校验签名",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

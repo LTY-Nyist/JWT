@@ -1,0 +1,30 @@
+﻿// See https://aka.ms/new-console-template for more information
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+//未修改的
+//rP0qjgq6Nffl7oH0BSblc_veEK_quLYkaP4vbHHEWQA 签名
+//eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJQYXNzcG9ydCI6IjEyMzQ1NiIsIlFRIjoiODg4ODgiLCJJZCI6IjY2NjY2IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiIxMTExMSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWUiOiJMVFkiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9ob21lcGhvbmUiOiI5OTkiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOlsiYWRtaW4iLCJtYW5hZ2VyIl0sImV4cCI6MTY0MzUzMjEzNH0.rP0qjgq6Nffl7oH0BSblc_veEK_quLYkaP4vbHHEWQA
+//修改了payload
+//chhH8UCAFuBb23Vs09tdvTHe9Zb2sBYMdu-RSowLU3M
+//eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJQYXNzcG9ydCI6IjEyMzQ1NiIsIlFRIjoiODg4ODgiLCJJZCI6Ijc3Nzc3NyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL25hbWVpZGVudGlmaWVyIjoiMTExMTEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiTFRZIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvaG9tZXBob25lIjoiOTk5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjpbImFkbWluIiwibWFuYWdlciJdLCJleHAiOjE2NDM1MzI1MTR9.chhH8UCAFuBb23Vs09tdvTHe9Zb2sBYMdu-RSowLU3M
+string jwt = Console.ReadLine();
+string secKey = "fasdfad&9045dafz222#fadpio@0232";
+//用于创建和验证 Json Web 令牌
+
+JwtSecurityTokenHandler tokenHandler = new();
+//包含一组在验证令牌时使用的参数。
+TokenValidationParameters valParam = new();
+
+var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secKey));
+valParam.IssuerSigningKey = securityKey;
+valParam.ValidateIssuer = false;
+valParam.ValidateAudience = false;
+ClaimsPrincipal claimsPrincipal = tokenHandler.ValidateToken(jwt,
+            valParam, out SecurityToken secToken);
+foreach (var claim in claimsPrincipal.Claims)
+{
+    Console.WriteLine($"{claim.Type}={claim.Value}");
+}
+
